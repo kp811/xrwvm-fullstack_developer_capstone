@@ -38,7 +38,7 @@ if ( curr_user !== null &&  curr_user !== "") {
 }
     return (
         <div>
-          <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"darkturquoise",height:"1in"}}>
+          {/* <nav class="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"darkturquoise",height:"1in"}}>
             <div class="container-fluid">
               <h2 style={{paddingRight: "5%"}}>Dealerships</h2>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,31 @@ if ( curr_user !== null &&  curr_user !== "") {
                   </span>
               </div>
             </div>
-          </nav>
+           </nav> */
+            <nav class="navbar navbar-dark bg-dark" style={{height:"0.8in"}}>
+              <div class="container-fluid justify-content-start">
+                <a class="navbar-brand" style={{width:"1.5in"}}>Dealerships</a>
+                <div class="navbar-expand flex-fill">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-expand" style={{paddingRight:"1in"}}>
+                  <ul class="navbar-nav loginlink" id="loginlogout">
+                  {/* {home_page_items} */}
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          }
         </div>
     )
 }
